@@ -1,0 +1,39 @@
+@import './variables';
+
+.second-blog {
+  margin-bottom: 124px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1098px;
+    margin-left: auto;
+    gap: 16px;
+
+    &_marginL {
+      margin-left: 0;
+    }
+  }
+
+  &__both-cards {
+    display: flex;
+    margin-right: 16px;
+  }
+
+  &__solo-card {
+    display: flex;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__both-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

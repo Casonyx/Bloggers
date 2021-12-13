@@ -1,0 +1,54 @@
+@import './variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 541px;
+
+  &__img {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  &__date {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+  
+  &__name {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-family: $kudryashev;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin: 0 0 20px 0;
+    width: 80%;
+    font-size: 14px;
+    font-family: $gramatikaSlanted;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+
+    &_width {
+      width: 100%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    margin-top: auto;
+  }
+
+  &__secondary {
+    max-width: 263px;
+    justify-content: flex-end;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}

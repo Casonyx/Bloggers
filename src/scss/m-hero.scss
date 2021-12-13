@@ -1,0 +1,174 @@
+@import './variables';
+
+.m-hero {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 1014px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 240px;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 72px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    transition: color .3s;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+
+  &__img {
+    max-width: 926px;
+    margin: 0 auto 30px auto;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+  }
+
+  &__text {
+    max-width: 216px;
+    color: #fff;
+    font-size: 14px;
+    font-family: $gramatikaSlanted;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 20px;
+    text-indent: 24px;
+    margin: 0 0 48px 0 ;
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+
+  &__date {
+    color: #fff;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: $kudryashev;
+    letter-spacing: 0.06em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    text-align: end;
+
+    & > span {
+      text-align: left;
+    }
+  }
+
+  &__down {
+    display: flex;
+    align-items: flex-end;
+
+    & > a {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      text-decoration: none;
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      border-radius: 50%;
+      color: #000;
+      font-size: 12px;
+      font-family: $gramatikaRegular;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      margin-right: 12%;
+      transition: color .3s;
+
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+
+  &__who {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    margin-left: 7px;
+  }
+
+  &__magazine {
+    margin-top: 48px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__main {
+      width: 90%;
+    }
+
+    &__title {
+      width: 70%;
+      font-size: 55px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__main {
+      flex-direction: column-reverse;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 42px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__down > a {
+      margin-right: 4%;
+      width: 54px;
+      height: 54px;
+    }
+  }
+}

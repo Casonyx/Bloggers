@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+
+@font-face {
+  font-family: 'GramatikaShiftedBold';
+  src: url('../font/GramatikaDemoBoldShifted.otf');
+  src: local('../font/GramatikaDemoBoldShifted.otf');
+  src: url('../font/GramatikaDemoBoldShifted.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GramatikaBold';
+  src: url('../font/GramatikaDemoBold.otf');
+  src: local('../font/GramatikaDemoBold.otf');
+  src: url('../font/GramatikaDemoBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GramatikaRegular';
+  src: url('../font/GramatikaDemoRegular.otf');
+  src: local('../font/GramatikaDemoRegular.otf');
+  src: url('../font/GramatikaDemoRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GramatikaShifted';
+  src: url('../font/GramatikaDemoShifted.otf');
+  src: local('../font/GramatikaDemoShifted.otf');
+  src: url('../font/GramatikaDemoShifted.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GramatikaSlanted';
+  src: url('../font/GramatikaDemoSlanted.otf');
+  src: local('../font/GramatikaDemoSlanted.otf');
+  src: url('../font/GramatikaDemoSlanted.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Kudryashev';
+  src: url('../font/KudryashevHeadline.otf');
+  src: local('../font/KudryashevHeadline.otf');
+  src: url('../font/KudryashevHeadline.otf') format('opentype');
+}
+
+$gramatikaShiftedBold: 'GramatikaShiftedBold';
+$gramatikaBold: 'GramatikaBold';
+$gramatikaRegular: 'GramatikaRegular';
+$gramatikaShifted: 'GramatikaShifted';
+$gramatikaSlanted: 'GramatikaSlanted';
+$kudryashev: 'Kudryashev';
+
+$hover: #ffa500;

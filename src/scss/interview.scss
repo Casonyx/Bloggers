@@ -1,0 +1,95 @@
+@import './variables';
+
+
+.interview {
+  background: url('../images/interview/background.png') no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 124px;
+  color: #fff;
+  padding: 36px;
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 744px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+
+  &__name,
+  &__title {
+    margin: 0;
+    font-size: 80px;
+    font-family: $kudryashev;
+    font-weight: 400;
+  }
+
+  &__name {
+    text-align: end;
+  }
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 258px;
+    font-size: 14px;
+    font-family: $gramatikaSlanted;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-indent: 40px;
+  }
+
+  &__by-who {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 4px;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: $gramatikaRegular;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__title,
+    &__name {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__title,
+    &__name {
+      font-size: 50px;
+    }
+
+    &__content {
+      min-height: 500px;
+    }
+  }
+}

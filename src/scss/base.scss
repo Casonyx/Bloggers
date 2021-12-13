@@ -1,0 +1,49 @@
+@import './variables';
+
+.background-wrapper {
+  background: url('../images/m-hero__back.png') no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 8px 0;
+  margin: 0 0 124px 0;
+  font-style: 14px;
+  font-weight: 400;
+  font-family: $gramatikaRegular;
+  letter-spacing: 0.06em;
+}
+
+.btn {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-family: $gramatikaRegular;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 28px;
+  transition: border-color .3s;
+
+  &:hover {
+    border-color: $hover;
+  }
+}
